@@ -12,3 +12,90 @@ img,
 video {
   display: block;
 }
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+body {
+  background: #f2f2f2;
+  display: flex;
+  justify-content: start;
+  align-items: flex-start;
+  padding: 40px 0;
+  margin-left: 40px;
+  font-family: lato, sans-serif;
+}
+
+.card {
+  background: #ffffff;
+  width: 360px;
+  border-radius: 20px;
+  padding: 24px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 22px;
+}
+
+.item img {
+  width: 46px;
+  height: 46px;
+  object-fit: contain;
+  margin-right: 14px;
+}
+
+
+.info {
+  flex: 1;
+}
+
+.info strong {
+  display: block;
+  color: #000;
+  font-family: Lato;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 15px; /* 100% */
+}
+
+.info span {
+color: #848484;
+font-family: Lato;
+font-size: 15px;
+font-style: normal;
+font-weight: 400;
+line-height: 15px; /* 100% */
+}
+
+.price {
+  font-size: 15px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.checkout {
+  width: 100%;
+  margin-top: 12px;
+  padding: 16px 0;
+  border: none;
+  border-radius: 999px;
+  background: #12004d;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.checkout:hover {
+border-radius: 25px;
+background: #4924FF;
+}
